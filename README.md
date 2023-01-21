@@ -34,7 +34,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O projeto Habits, é um rastreador de habitos desenvolvido para ajudar pessoas a organizar rotinas saudáveis diariamente.
 
-- [Acesse o projeto finalizado, online](https://lhzxdev.github.io/lhz-habit-tracker)
+- [Acesse o projeto finalizado, online](https://lhzxdev.github.io/lhz-habit-tracker/)
 
 
 ## 🔖 Layout
