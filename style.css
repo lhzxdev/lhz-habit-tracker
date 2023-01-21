@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*remove todos os espaços adicionais pra manter a proporção da caixa de forma correta*/
+}
+
+body {
+  background-color: #09090A;
+  color: white;
+  height: 100vh;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*justifica o conteúdo do elemento de acordo com a largura, colocando espaço entre os elementos*/
+  background-color: #09090A;
+
+  padding: 48px; /*preenchimento interno do header do site/app*/
+
+  position: fixed;
+  width: 100%;
+}
+
+
+button {
+  padding: 16px 24px; /*Espaços internos da caixa*/
+  border-radius: 8px; /*arredondamento da borda*/
+  border: 1px solid #8b5cf6; /*largura e cor da borda de complemento*/
+  background-color: transparent; /*seleciona a cor transparente para o fundo do botão*/
+  color: white; /*cor do texto*/
+  
+  display: flex; /*disposição dos itens dentro de um elemento, flex = flexivel*/
+  align-items: center; /*alinha os intens do elemento ao centro, apenas qnd tem a opção flex ativa*/
+  gap: 12px; /*espaço entre elementos da caixa, precisa do flex ativo*/
+  
+  font-family: 'Inter'; /*familia da fonte usada no butão*/
+  font-weight: 600px; /*peso da fonte: largura e transparencia*/
+  font-size: 16px; /*tamanho da fonte*/
+  line-height: 125%; /*zoom da linha da fonte*/
+}
+
+#form-habits {
+  display: flex; /*flexibiliza a disposição do conteudo, coloca o conteudo um ao lado do outro*/
+  padding: 182px 48px 48px;
+  width: fit-content;
+}
+
+.habits {
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.habit {
+  width: 64px;
+  height: 64px;
+
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  display: flex;
+  gap: 48px;
+  margin-left: 32px; /*espaço da margem esquerda*/
+}
+
+.day {
+  display: flex;
+  flex-direction: column; /*coloca  a disposição um ao lado do outro em coluna*/
+  gap: 24px;
+}
+
+.day div { /*seleciona as divs dentro da classe day*/
+  margin-bottom: 8px;
+
+  font-family: 'Roboto Mono';
+  font-size: 20px;
+  line-height: 125%;
+
+  color: #A1A1AA;
+
+  text-align: center;
+}
+
+input {
+  appearance: none; /*remove a aparencia do elemento*/
+  -webkit-appearance: none; /*alguns navegadores precisam dessa declaração para funcionar*/
+
+  width: 64px; /*largura*/
+  height: 64px; /*altura*/
+
+  border: 2px solid #27272A; /*largura e cor da borda*/
+  border-radius: 8px;
+
+  background: #18181B;
+
+}
+
+input:checked { /*pseudo-selector*/
+  background: #8B5CF6;
+  border: 2px solid #A78BFA;
+
+}
+
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
+}
